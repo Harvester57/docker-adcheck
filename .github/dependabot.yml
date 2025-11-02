@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: "docker"
+  directory: "/"
+  commit-message:
+    prefix: "docker"
+  labels: [ 'docker' ]
+  assignees:
+  - "Harvester57"
+  schedule:
+    interval: "weekly"
+  groups:
+    docker-dependencies:
+      applies-to: version-updates
+      patterns:
+      - "*"
